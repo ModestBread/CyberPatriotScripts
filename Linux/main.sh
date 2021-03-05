@@ -58,8 +58,11 @@ PasswdFun(){
 	#--------- Change Root Password ----------------
 	passwd
 	echo "Please change other user's passwords too"
-	cont
-}
+cont
+PasswordRulesFun()
+PasswdChangeOverTime
+cont
+
 zeroUidFun(){
 	printf "\033[1;31mChecking for 0 UID users...\033[0m\n"
 	#--------- Check and Change UID's of 0 not Owned by Root ----------------
